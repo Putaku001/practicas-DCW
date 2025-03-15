@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novaweb Designers</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-poppins leading-relaxed text-textColor bg-gray-100  overflow-x-hidden">
+    <div class="fixed w-5 h-5 border border-violet-600 rounded-full pointer-events-none z-50 transition-all duration-100"></div>
+    <div class="fixed w-2 h-2 bg-violet-600 rounded-full pointer-events-none z-50 transition-all duration-150"></div>
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/90 shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <a href="#" class="flex items-center text-violet-600 font-bold text-2xl no-underline hover:text-red-400 ">
+                    <img src="img/d8624d2c-5598-49f5-a392-f666ed71d940.png" alt="Novaweb Designers Logo" class="mr-2 w-10 h-10" />
+                    <span>Novaweb Designers</span>
+                </a>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#inicio" class="text-violet-600 font-bold">Inicio</a></li>
+                    <li><a href="./servicios.html" class="text-gray-900 font-semibold hover:text-violet-600 transition-colors duration-300">Servicios</a></li>
+                    <li><a href="./sobre_nosotros.html" class="text-gray-900 font-semibold hover:text-violet-600 transition-colors duration-300">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-r from-indigo-100 to-rose-100">
+            <div class="max-w-7xl mx-auto px-4">
+                <h1 class="text-6xl md:text-7xl font-bold text-violet-600 mb-4 glitch" data-text="Innovación Digital">
+                    Innovación Digital
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-900 mb-8">Transformamos ideas en experiencias web extraordinarias</p>
+                <a href="#consultas" class="inline-block bg-violet-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-red-400 transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg">
+                    Solicita una consulta
+                </a>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section id="portafolio" class="py-24 ">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-4xl text-center text-violet-600 mb-12 font-bold">Nuestro Portafolio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="relative overflow-hidden rounded-lg shadow-md group">
+                        <img src="img/asd1.png" alt="Proyecto 1" class="w-full h-auto transition-transform duration-300 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-violet-600/50 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <h3 class="text-white text-2xl mb-2">Proyecto 1</h3>
+                            <p class="text-white text-center px-4 mb-4">Breve descripción del proyecto y sus características principales.</p>
+                            <a href="#" class="bg-white text-violet-600 px-4 py-2 rounded-full font-semibold hover:bg-red-400 hover:text-white transition-colors duration-300">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg shadow-md group">
+                        <img src="img/asd2.png" alt="Proyecto 2" class="w-full h-auto transition-transform duration-300 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-violet-600/50 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <h3 class="text-white text-2xl mb-2">Proyecto 2</h3>
+                            <p class="text-white text-center px-4 mb-4">Breve descripción del proyecto y sus características principales.</p>
+                            <a href="#" class="bg-white text-violet-600 px-4 py-2 rounded-full font-semibold hover:bg-red-400 hover:text-white transition-colors duration-300">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg shadow-md group">
+                        <img src="img/asd3.png" alt="Proyecto 3" class="w-full h-auto transition-transform duration-300 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-violet-600/50 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <h3 class="text-white text-2xl mb-2">Proyecto 3</h3>
+                            <p class="text-white text-center px-4 mb-4">Breve descripción del proyecto y sus características principales.</p>
+                            <a href="#" class="bg-white text-violet-600 px-4 py-2 rounded-full font-semibold hover:bg-red-400 hover:text-white transition-colors duration-300">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Consultation Section -->
+        <section id="consultas" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-4xl text-center text-violet-600 mb-12 font-bold">Solicita una Consulta</h2>
+                <form action="#" method="post" class="max-w-2xl mx-auto">
+                    <div class="mb-6">
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre" 
+                            class="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-violet-600 transition-colors duration-300" />
+                    </div>
+                    <div class="mb-6">
+                        <input type="email" id="email" name="email" required placeholder="Email" 
+                            class="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-violet-600 transition-colors duration-300" />
+                    </div>
+                    <div class="mb-6">
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Teléfono" 
+                            class="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-violet-600 transition-colors duration-300" />
+                    </div>
+                    <div class="mb-6">
+                        <textarea id="mensaje" name="mensaje" required placeholder="Mensaje" 
+                            class="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-violet-600 transition-colors duration-300"></textarea>
+                    </div>
+                    <button type="submit" 
+                        class="w-full bg-violet-600 text-white py-4 px-8 rounded-full font-semibold hover:bg-red-400 transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg">
+                        Enviar Solicitud
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- Events Section -->
+        <section id="eventos" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 ">
+                <h2 class="text-4xl text-center text-violet-600 mb-12 font-bold">Próximos Eventos</h2>
+                <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide space-x-8 justify-center">
+                    <div class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden snap-start">
+                        <div class="bg-violet-600 text-white text-center p-4">
+                            <div class="text-2xl font-bold">15</div>
+                            <div class="text-sm">MAR</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl mb-2 font-semibold">Taller de Diseño UX/UI</h3>
+                            <p>Aprende los fundamentos del diseño de experiencia de usuario e interfaz.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden snap-start">
+                        <div class="bg-violet-600 text-white text-center p-4">
+                            <div class="text-2xl font-bold">30</div>
+                            <div class="text-sm">MAR</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl mb-2 font-semibold ">Webinar sobre Tendencias Web</h3>
+                            <p>Descubre las últimas tendencias en diseño y desarrollo web para 2025.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-none w-72 bg-white rounded-lg shadow-md overflow-hidden snap-start">
+                        <div class="bg-violet-600 text-white text-center p-4">
+                            <div class="text-2xl font-bold">10</div>
+                            <div class="text-sm">ABR</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl mb-2 font-semibold">Meetup de Innovación Digital</h3>
+                            <p>Conecta con otros profesionales y explora las últimas innovaciones en tecnología web.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-zinc-800 to-zinc-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl mb-4">Contacto</h3>
+                    <p class="flex items-center mb-2">Calle Principal, San Miguel</p>
+                    <p class="flex items-center mb-2">+503 1234-5678</p>
+                    <p class="flex items-center mb-2"></i> contacto@novawebdesigners.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl mb-4">Síguenos</h3>
+                    <ul class="flex space-x-4">
+                        <li><a href="https://facebook.com" target="_blank"><img src="icon/facebook.png" alt="Facebook" class="w-6 h-6"></a></li>
+                        <li><a href="https://twitter.com" target="_blank"><img src="icon/twitter.png" alt="Twitter" class="w-6 h-6"></a></li>
+                        <li><a href="https://instagram.com" target="_blank"><img src="icon/instagram.png" alt="Instagram" class="w-6 h-6"></a></li>
+                        <li><a href="https://linkedin.com" target="_blank"><img src="icon/linkeding.png" alt="LinkedIn" class="w-6 h-6"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl mb-4">Newsletter</h3>
+                    <form class="flex">
+                        <input type="email" placeholder="Tu email" required class="flex-1 p-2 rounded-l-lg focus:outline-none bg-white text-gray-700" />
+                        <button type="submit" 
+                            class="bg-violet-600 px-4 rounded-r-lg hover:bg-red-400 transition-colors duration-300">
+                            Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-white/10">
+                <p>&copy; 2025 Novaweb Designers. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
